@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Interactive Page</h1>
+        <p>Explore some dynamic features built with JavaScript.</p>
+    </header>
+
+    <main>
+        <section class="interactive-section">
+            <h2>Interactive Elements</h2>
+            <div class="feature-container">
+                <div class="mode-toggle-container">
+                    <h3>Light/Dark Mode</h3>
+                    <button id="mode-toggle">Toggle Mode</button>
+                </div>
+                <div class="faq-container">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-item">
+                        <h4 class="faq-question">What is JavaScript?</h4>
+                        <p class="faq-answer">JavaScript is a programming language that makes web pages interactive and dynamic.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 class="faq-question">How do event listeners work?</h4>
+                        <p class="faq-answer">An event listener "listens" for a specific user action (like a click) and then runs a function in response.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 class="faq-question">What is the DOM?</h4>
+                        <p class="faq-answer">The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="form-section">
+            <h2>Contact Us</h2>
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <div class="error-message" id="name-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                    <div class="error-message" id="message-error"></div>
+                </div>
+                <button type="submit">Send Message</button>
+                <div id="form-message"></div>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>gi
